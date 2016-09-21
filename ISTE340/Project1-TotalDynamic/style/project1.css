@@ -1,0 +1,52 @@
+/*css file for project1*/
+body 			{background-color: #70121b;
+				height: 100%;}
+
+#pageWrapper 	{width: 80%;
+				height: 90vh;					
+              	margin-left: auto;
+              	margin-right:auto;
+              	border: 2px solid #ffffff;
+              	background-color:#c54c35;
+          		}
+
+h1 				{text-align: center;
+				 text-decoration: underline;
+				 color: #ffffcc;
+				 font-size: 2em;
+				 }
+
+h2				{color: #70121b;
+				 font-size: 1.2em;
+				 font-family: Tahoma;}
+
+section			{border: 2px solid #ffffff;
+				 height: 150px;
+				 width: 100%;
+				 display: inline-block;
+				 margin-left: 5%;}
+
+select			{margin-left: 10%;
+				 width: 120px;}
+
+main 			{float: left;
+				width: 50%;
+				border: 2px solid #000000;
+				margin-left:5%;}
+
+aside			{float: right;
+				border: 2px solid #ffffff;
+				margin-right: 5%;
+				margin-top: 10%;
+				width: 35%;
+				}
+
+img				{display: block;
+    			margin-left: auto;
+    			margin-right: auto 
+				}
+
+p  				{color: #70121b;
+				 font-size: 1.2em;
+				 font-family: "Comic Sans MS";}
+

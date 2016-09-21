@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>340 Class 1a - JavaScript demo</title>
+	<meta name="generator" content="BBEdit 10.5" />
+	
+	<!-- The following is JavaScript -->
+	<script type="text/javascript">
+	// This is JavaScript, see the difference in comments?
+	
+	//alert("Hello");
+	
+	// Define variables: Global vs Local
+	var num=3;
+	
+	console.log('start: num = '+num);
+	
+	function test(){
+		console.log("Test1: num = "+num);
+		var num=5;
+		console.log("test: num = "+num);
+		
+		value = 7;
+		console.log("test: value = "+value);
+	}
+	
+	test();
+	
+	console.log("End: num = "+num);
+	console.log("End: value = "+value);
+	
+	// Create an array, show for-in loop
+	var myA=['peter','paul','mary'];
+	for( i in myA ){
+		console.log(myA[i]);
+	}
+	
+	// define a JSON object
+	var obj = {
+		name:['michael','floeser','javascript'],
+		job:['prof','RIT'],		
+		funct:function(x){
+			console.log(x);
+		}
+	}
+	
+	for (i in obj ){
+		//console.log( obj[i] );
+		obj.funct(i+' ## '+obj[i]);
+	}
+	
+	console.log('A- '+ obj['name'][1] );
+	console.log('B- '+ obj.name[1] );
+	obj.funct('from argument');
+	
+	
+	
+	// create some processing code
+	var answer = '';
+	
+	
+	
+	
+	
+	</script>
+	
+	
+</head>
+<body>
+<h1>Blank page template</h1>
+</body>
+</html>

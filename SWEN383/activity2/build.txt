@@ -1,0 +1,20 @@
+Activity 2
+Amit Pandey
+
+The approach-
+
+Three distinct programs were created, one for each of the different output formats- Swing, AWT, and as text on console.
+
+1. In order to run the Swing version, compile and run WeatherStationSwing.java. Below are the files needed      to correctly run it-
+	WeatherStationSwing.Java
+	SwingUI.java
+	KelvinTempSensor.java
+
+2. In order to run the AWT version, compile and run WeatherStationAWT.java. Below are the files needed          to correctly run it 
+	WeatherStationAWT.java
+	AWTUI.java
+	KelvinTempSensor.java
+
+3. In order to run the text version, compile and run WeatherStation.java. Below are the files needed            to correctly run it 
+	WeatherStation.java
+	KelvinTempSensor.java	

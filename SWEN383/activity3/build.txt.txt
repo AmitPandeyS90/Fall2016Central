@@ -1,0 +1,5 @@
+SwingUI contains the main method. Files needed to run the program are-
+
+KelvinTempSensor.java
+SwingUI.java
+WeatherStation.java

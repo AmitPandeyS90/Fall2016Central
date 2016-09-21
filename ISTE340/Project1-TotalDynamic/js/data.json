@@ -1,0 +1,12 @@
+{
+"init": ["What sort of food you're in a mood to eat today?","- Select -","Spicy", "Mild", "Light"],
+"Spicy": ["What cuisine you want to try?", "- Select -", "Mexican", "Chinese", "Indian"],
+"Mexican": ["Which Mexican dish you would like?", "- Select -", "Skillet Spicy Mexican Chicken", "Mexican Manicotti", "Spicy Shrimp Kabobs"],
+"Chinese": ["Which Chinese dish you would like?", "- Select -",  "Dan Dan Noodles", "Ma Po Tofu", "Saliva Chicken"],
+"Indian": ["Which Indian dish you would like?", "- Select -", "Rista", "Chicken Chettinad", "Kozi Kari"],
+"Mild": ["What cuisine you want to try?", "- Select -", "Italian","Mediterranean","Costa Rican"],
+"Italian": ["Which Italian dish you would like?", "- Select -", "", "", ""],
+"Mediterranean": ["Which Mediterranean dish you would like?", "- Select -", "", "", ""],
+"CostaRican": ["Which Costa Rican dish you would like?", "- Select -", "Tamale", "Chorreada", "Gallo Pinto"],
+"Light": ["What cuisine you want to try?", "- Select -", "Grilled Chicken Caeser Salad", "Turkey Cobb Salad", "Green Harvest"]
+}

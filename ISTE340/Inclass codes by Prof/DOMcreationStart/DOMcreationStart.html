@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>DOM Creation</title>
+<script type="text/javascript">
+//<![CDATA[
+	//some possible methods/props you will use! (know them!)
+	//createElement, setAttribute, appendChild, replaceChild, createTextNode, childNodes[], firstChild, 
+	//nodeType, nodeName, nodeValue, getElementById, getElementsByTagName
+	
+	var myBody;
+	
+	function createText(){
+		myBody = document.getElementsByTagName('body')[0];
+	
+		// create elements in memory
+		var hEle = document.createElement('h2');
+		hEle.setAttribute('style','color:green');	// not in lower IE's
+		
+		// add ID tag so we can reference this later
+		hEle.setAttribute('id','domTest');
+		
+		var text=document.createTextNode('Yippee... Dynamically created!');
+		hEle.appendChild(text);
+		
+		// display elements onto the document / browser
+		myBody.appendChild(hEle);
+		
+		// somewhere later in another method, in a far off galaxy
+		document.getElementById('domTest').style.color='red';
+		
+		
+		// add an image
+		var imgEle = document.createElement('img');
+		imgEle.setAttribute('src','california.jpg');
+		myBody.appendChild(imgEle);
+		
+		// create a button
+		var inpEle = document.createElement('input');
+		inpEle.setAttribute('type','button');
+		inpEle.setAttribute('value','Delete pictures');
+		inpEle.setAttribute('onclick','myRemove()');
+		myBody.appendChild(inpEle);
+				
+	} // end createText
+	
+	function myRemove(){
+		//console.log('Remove the pictures');
+		var images = document.getElementsByTagName('img');
+		var len = images.length;
+		//debugger;
+		for( var i=0; i<len; i++){
+		
+			document.getElementsByTagName('body')[0].removeChild(images[0]);
+		
+		} // end for
+	
+	} // end myRemove
+	
+	
+	
+//]]>
+</script>
+</head>
+<body>
+<div id="buttons" style="position:absolute; top:8px; left:200px">
+  <button onclick="createText();">Create It!</button>
+</div>
+<body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+Below files are needed to run the program
+
+KelvinTempSensor.java
+Barometer.java
+weatherStation.java
+SwingUI.java
+TextUI.java
+
+For Swing display, compile and run SwingUI.java
+For Text display, compile and run TextUI.java

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>Form Play</title>
+	<script type="text/javascript">
+  		function go(which){
+  			//alert( which );
+			if(which!='none'){
+				location=which;
+			}
+  		}
+  		
+  		function putColor(){
+			//alert( that );
+			//for( var i=0;i<document.forms[0].choose.length; i++){
+			//	if(document.forms[0].choose[i].checked){
+			//		var colorChoice = document.forms[0].choose[i].value;
+			//		document.forms[0].elements[5].value = colorChoice;
+			//	}
+			//}
+			
+			// More efficient alternative to the above
+			
+			var color = document.forms[0].choose.value;
+			document.forms[0].favorite.value = color;	
+			document.bgColor=color;
+			
+			
+  		}
+</script>
+</head>
+<body>
+    <form id="myId" name="myId">
+        <!--why onchange below?  How is it different from onclick/onmouseup?-->
+        <select name="selectmenu" onchange="go(this.value);">
+            <option value="none">
+                --Select page--
+            </option>
+            <option value="http://www.microsoft.com">
+                Microsoft
+            </option>
+            <option value="http://www.altavista.com">
+                Altavista
+            </option>
+            <option value="http://www.w3schools.com">
+                W3Schools
+            </option>
+        </select>
+        <hr />
+        <p>Which did you choose?<br />
+        <!--
+          Most important thing about radio buttons - they all have the SAME NAME (choose in this case)
+        -->
+        <input type="radio" name="choose" value="red" />Red<br />
+        <input type="radio" name="choose" value="green" />Green<br />
+        <input type="radio" name="choose" value="blue" />Blue<br />
+        <input type="button" value="Color choice" onclick="putColor()" /></p>
+        <p>Your favorite color is: <input type="text" name="favorite" value="" /></p>
+    </form>
+</body>
+</html>

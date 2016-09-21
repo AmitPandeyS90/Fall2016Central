@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>You title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link rel="stylesheet" type="text/css" href="your.css">-->
+</head>
+
+<body>
+<div class="navbar">
+<span id='bk'><a href="index.html">Back</a></span>
+<span id='label'>Your Title</span>
+<span id='hm'><a href="index.html">Home</a></span>
+</div>
+
+<div class="cardlist">
+	<div class="content">
+		<div id="id01"></div>
+	</div>
+</div>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+var url = "JSONObj.json";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var myArr = JSON.parse(xmlhttp.responseText);
+        myFunction(myArr.myData);
+    }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(arr) {
+	
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out +=  
+            "<div>" +
+            "<img class='pic' src=images/" + arr[i].DishName + ".jpg />" + 
+            "<p class='styleme'>" + arr[i].CountryOrigin + "</p>" +
+            "</div>" +
+            "<hr>";
+            }
+    document.getElementById("id01").innerHTML = out;
+}
+</script>
+
+</body>
+</html>
